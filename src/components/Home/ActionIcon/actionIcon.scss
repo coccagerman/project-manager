@@ -1,0 +1,38 @@
+.actionToggle {
+    background-color: white !important;
+    color: black !important;
+    &::after {
+        content: none;
+    }
+
+    &:hover, &:active, &:focus {
+        background-color: white !important;
+        color: black !important;
+    }
+}
+
+.actionIcon{
+    margin: -1.3rem 0 0 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+}
+
+.drowpdownMenu {
+    border: none;
+    width: 10rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: absolute;
+
+    .editAction {
+        border-bottom: 1px solid #D9D9D9;
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

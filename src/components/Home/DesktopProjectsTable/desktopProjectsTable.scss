@@ -1,0 +1,13 @@
+.projectsTableContainer{
+    height: auto !important;
+
+    .projectsTable {
+        margin: auto auto 5rem auto !important;
+        width: 90% !important;
+        box-shadow: inset 0px -1px 0px #D9D9D9 !important;
+
+        .status {
+            width: 10rem;
+        }
+    }
+}

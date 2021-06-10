@@ -1,0 +1,43 @@
+.dsktopProjectRegister {
+    .projectInfo{
+        .creationDate{
+            color: #777676;
+        }
+    }
+
+    .projectManager-container, .assignedTo-container {
+        position: relative;
+        top: 1rem;
+        left: 2rem;
+    }
+
+    .status{
+        p {
+        width: 59px;
+        height:22px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #595959;
+        padding: 1px 8px;
+        border: 1px solid #D9D9D9;
+        position: relative;
+        top: 1rem;
+        }
+    }
+
+    .usersIcons {
+        position: absolute;
+        left: -2.5rem;
+        bottom: -.25rem;
+    }
+
+    .actionIcon{
+        position: relative;
+        left: -1.4rem;
+    }
+
+    .drowpdownMenu {
+        position: absolute;
+        left: -1rem !important;
+    }
+}

@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./components/generalStyles.scss";
+
+@import "./components/Home/HomeHeader/homeHeader.scss";
+@import "./components/Home/SearchBar/searchBar.scss";
+@import "./components/Home/UsersIcons/usersIcons.scss";
+@import "./components/Home/ActionIcon/actionIcon.scss";
+
+@import "./components/Home/DesktopProjectsTable/desktopProjectsTable.scss";
+@import "./components/Home/DesktopProjectsTable/DesktopProjectRegister/desktopProjectRegister.scss";
+
+@import "./components/Home/MobileProjectsTable/MobileProjectRegister/mobileProjectRegister.scss";
+
+@import "./components/Add&EditProject/Add&EditProjectHeader/add&EditProjectHeader.scss";
+@import "./components/Add&EditProject/Add&EditProjectForm/add&EditProjectForm.scss";
+
+@import "./components/mediaQueries.scss";

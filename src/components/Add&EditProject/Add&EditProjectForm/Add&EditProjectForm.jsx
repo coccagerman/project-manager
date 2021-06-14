@@ -12,13 +12,13 @@ export default function AddAndEditProjectForm ({btnContent}) {
     const { projectId } = useParams()
     const project = context.projects.filter(project => (project.projectId === parseInt(projectId)))[0]
 
-    const showSelectedProjectManager = () => context.projectManagers.filter(pm => (pm === project.projectManager)).map(pm => <option value={pm} selected>{pm}</option>)
-    const showOtherProjectManagers = () => context.projectManagers.filter(pm => (pm !== project.projectManager)).map(pm => <option value={pm}>{pm}</option>)
-    const showProjectManagers = () => context.projectManagers.map(pm => <option value={pm}>{pm}</option>)
+    const showSelectedProjectManager = () => context.projectManagers.filter(pm => (pm === project.projectManager)).map((pm, i) => <option key={i} value={pm} selected>{pm}</option>)
+    const showOtherProjectManagers = () => context.projectManagers.filter(pm => (pm !== project.projectManager)).map((pm, i) => <option key={i} value={pm}>{pm}</option>)
+    const showProjectManagers = () => context.projectManagers.map((pm, i) => <option key={i} value={pm}>{pm}</option>)
 
-    const showSelectedDeveloper = () => context.developers.filter(dev => (dev === project.assignedTo)).map(dev => <option value={dev} selected>{dev}</option>)
-    const showOtherDevelopers = () => context.developers.filter(dev => (dev !== project.assignedTo)).map(dev => <option value={dev}>{dev}</option>)
-    const showDevelopers = () => context.developers.map(dev => <option value={dev}>{dev}</option>)
+    const showSelectedDeveloper = () => context.developers.filter(dev => (dev === project.assignedTo)).map((dev, i) => <option key={i} value={dev} selected>{dev}</option>)
+    const showOtherDevelopers = () => context.developers.filter(dev => (dev !== project.assignedTo)).map((dev, i) => <option key={i} value={dev}>{dev}</option>)
+    const showDevelopers = () => context.developers.map((dev, i) => <option key={i} value={dev}>{dev}</option>)
 
     const [projectName, setProjectName] = useState(projectId !== undefined ? project.projectName : null)
     const [projectDescription, setProjectDescription] = useState(projectId !== undefined ? project.projectDescription : null)
